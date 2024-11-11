@@ -1,0 +1,352 @@
+
+
+/* Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #070410;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+/* header style */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+    background-color: #231651;
+}
+
+header h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 3em;
+    color: #FFFFFF;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin: 0 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.search-input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1em;
+}
+
+
+
+
+/* main style */
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 16px;
+}
+
+
+.movie-card-wide {
+    display: flex;
+    align-items: center;
+    background-color: #4DCCBD;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+
+
+.movie-details-wide {
+    padding: 24px;
+    background-color: #231651;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.movie-details-wide h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5em;
+    color: #EEF36A;
+    margin-bottom: 16px;
+}
+
+.movie-details-wide p {
+    font-size: 1.2em;
+    margin-bottom: 24px;
+}
+
+
+.movie-poster-wide {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+
+
+.watch-now-button-wide {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+    padding: 12px 24px;
+    background-color: #EEF36A;
+    color: #231651;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    max-width: 200px;
+}
+
+
+
+
+.watch-now-button-wide:hover {
+    background-color: #4DCCBD;
+}
+
+.movie-card {
+    background-color: #4DCCBD;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-details {
+    padding: 16px;
+    background-color: #231651;
+    color: #FFFFFF;
+    text-align: left;
+    width: 100%;
+}
+
+.movie-details h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.8em;
+    color: #EEF36A;
+    margin-bottom: 8px;
+}
+
+.movie-details p {
+    font-size: 1em;
+    margin-bottom: 16px;
+    
+}
+
+
+
+.movie-row {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+/* Watch Now Button */
+.watch-now-button {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.2em;
+    padding: 8px;
+    width: 100%;
+    background-color: #4DCCBD;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.watch-now-button:hover {
+    background-color: #231651;
+}
+
+
+
+
+
+
+.movie-card-large {
+    background-color: #4DCCBD;
+    border-radius: 8px;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px; 
+    margin: 0 auto 48px auto; 
+}
+
+.movie-poster-large {
+    width: 100%;
+    height: auto;
+    max-height: 400px; 
+    object-fit: cover;
+}
+
+.movie-details-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #231651;
+    color: #FFFFFF;
+}
+
+.movie-details-large h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5em;
+    margin: 0 16px 0 0;
+    color: #EEF36A;
+    flex: 1;
+}
+
+.movie-details-large p {
+    font-size: 1.2em;
+    flex: 2;
+    margin-right: 16px;
+    line-height: 1.4;
+}
+
+.watch-now-button-large {
+    padding: 16px 24px;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+    background-color: #EEF36A;
+    color: #231651;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.watch-now-button-large:hover {
+    background-color: #4DCCBD;
+}
+
+
+
+
+
+/* mobile version */
+@media (max-width: 720px) {
+
+    header nav a {
+        display: none;
+    }
+
+    .search-input {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 2em;
+        margin-bottom: 8px;
+    }
+
+    
+    .watch-now-button-wide,
+    .watch-now-button-large,
+    .watch-now-button {
+        font-size: 1em;
+        padding: 12px;
+        width: 100%;
+    }
+
+
+
+    .movie-card-wide,
+    .movie-card-large,
+    .movie-card {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+
+
+
+    
+    .movie-poster,
+    .movie-poster-wide,
+    .movie-poster-large {
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+
+
+
+
+    
+    .movie-details-wide,
+    .movie-details-large,
+    .movie-details {
+        padding: 16px;
+        font-size: 0.9em;
+        width: 100%; 
+    }
+
+    .movie-details-wide h2,
+    .movie-details-large h2,
+    .movie-details h2 {
+        font-size: 1.5em;
+    }
+
+    .movie-details-wide p,
+    .movie-details-large p,
+    .movie-details p {
+        font-size: 0.9em;
+    }
+
+    
+    
+}
+
+
+
+
+
